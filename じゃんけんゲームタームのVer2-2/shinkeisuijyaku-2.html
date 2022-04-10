@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/shinkeisuijyaku-2.css" />
+</head>
+<body>
+    <!-- スタート画面 -->
+
+    <!-- 神経衰弱テーブル画面 -->
+    <div class="table">
+        <div class="computer-side"><P class="text-center">コンピュータテーブル</P>
+            <div class="pair-counter"></div>
+            <div class="card-holder"></div>
+        </div>
+        <div class="field">
+                <div class="card" id="card1">
+                    <div class="back spade one" ><img src="img/spade1.png" alt="スペード1"></div>
+                    <div class="front" ><img src="img/top.png" alt="表"></div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="back spade two" ><img src="img/spade2.png" alt="スペード2"></div>
+                    <div class="front" ><img src="img/top.png" alt="表"></div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="back spade three" ><img src="img/spade3.png" alt="スペード3" ></div>
+                    <div class="front" ><img src="img/top.png" alt="表"></div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="back spade four"><img src="img/spade4.png" alt="スペード4"></div>
+                    <div class="front" ><img src="img/top.png" alt="表"></div>
+                </div>
+                <!-- <div class="card" id="card5">
+                    <img src="img/clover1.png" alt="クローバ1" class="card back clover one">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card6">
+                    <img src="img/clover2.png" alt="クローバ2" class="card back clover two">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card7">
+                    <img src="img/clover3.png" alt="クローバ3" class="card back clover three">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card8">
+                    <img src="img/clover4.png" alt="クローバ4" class="card back clover four">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card9">
+                    <img src="img/dia1.png" alt="ダイヤ1" class="card back dia one">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card10">
+                    <img src="img/dia2.png" alt="ダイヤ2" class="card back dia two">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card11">
+                    <img src="img/dia3.png" alt="ダイヤ3" class="card back dia three">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card12">
+                    <img src="img/dia4.png" alt="ダイヤ4" class="card back dia four">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card13">
+                    <img src="img/heart1.png" alt="ハート1" class="card back heart one">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card14">
+                    <img src="img/heart2.png" alt="ハート2" class="card back heart two">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card15">
+                    <img src="img/heart3.png" alt="ハート3" class="card back heart three">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div>
+                <div class="card" id="card16">
+                    <img src="img/heart4.png" alt="ハート4" class="card back heart four">
+                    <img src="img/top.png" alt="表" class="card front">
+                </div> -->
+
+        </div>
+        <div class="player-side"><P class="text-center">プレイヤーテーブル</P>
+            <div class="pair-counter"></div>
+            <div class="card-holder"></div>
+            <button class="btn">スタート</button>
+        </div>
+    </div>
+
+
+    <!-- ①カードを並べる(カードのポジションに乱数を使ってカードを配置) -->
+        <!-- ul/liタグでカード配置を定める -->
+
+
+    <!-- ②自分の番 -->  
+       <!-- ②-1．1枚目を選択 -->
+
+       <!-- ②-2．2枚目を選択 -->
+
+       <!-- ②-3．カードの合致を判断 -->
+
+       <!-- ②-4．ペアの時の処理（カウントUP、カードを回収、②-1に戻る） -->
+
+       <!-- ②-5．外れた時のの処理（カードを表に戻す、順番をBreak） -->
+
+
+    <!-- ③コンピューターの番 -->
+       <!-- ③-1．1枚目を選択 -->
+
+       <!-- ③-2．2枚目を選択 -->
+
+       <!-- ③-3．カードの合致を判断 -->
+
+       <!-- ③-4．ペアの時の処理（カウントUP、カードを回収、②-1に戻る） -->
+
+       <!-- ③-5．外れた時のの処理（カードを表に戻す、順番をBreak） -->
+
+
+    <!-- ④．カードがなくなるまで②③を続ける -->
+
+
+     <!-- JQueryを読み込み -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- 自作JSの読み込み -->
+     <script src="js/shinkeisuijyaku-2.js"></script> 
+</body>
+</html>
