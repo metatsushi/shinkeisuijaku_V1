@@ -1,0 +1,53 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+
+body {
+  height : 100vh;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+  font-size : 1.5em;
+}
+
+//// related codes from here ////
+
+.card {
+  position : relative;
+  width : 200px;
+  height : 200px;
+  -webkit-perspective : 1000px;
+  perspective : 1000px;
+  .front,.back {
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    cursor : pointer;
+    transition : transform 1s;
+    -webkit-backface-visibility : hidden;
+    backface-visibility : hidden;
+  }
+  .front {
+    color : #2d1e60;
+    background : #ff4f6f;
+  }
+  .back {
+    color : #ff4f6f;
+    background : #2d1e60;
+    transform : rotateY(-180deg);
+  }
+}
+
+.flipped {
+  .front {
+    transform : rotateY(180deg)
+  }
+  .back {
+    transform : rotateY(0);
+  }
+}
